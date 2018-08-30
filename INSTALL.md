@@ -57,14 +57,14 @@ Other optional libraries can enable specific features (check "CMake Options" for
 * Cuda >= 7.0 (feature extraction and depth map computation)
 * OpenGV (rig calibration and localization)
 
-Building the project using vcpkg (recommended on Windows)
+Building the project using Vcpkg (recommended on Windows)
 --------------------------------
 [Vcpkg](https://github.com/Microsoft/vcpkg) is a tool that helps with the acquiring, building, and management of C/C++ libraries.
-AliceVision's required dependencies can be built with it. Follow the [installation guide](https://github.com/Microsoft/vcpkg/blob/master/README.md#quick-start) to setup vcpkg.
+AliceVision's required dependencies can be built with it. Follow the [installation guide](https://github.com/Microsoft/vcpkg/blob/master/README.md#quick-start) to setup Vcpkg.
 
-**Note**: while started as a Windows only project, vcpkg recently became cross-platform. In the scope of AliceVision, it has only been tested on Windows.
+**Note**: while started as a Windows only project, Vcpkg recently became cross-platform. In the scope of AliceVision, it has only been tested on Windows.
 
-To build AliceVision (with Alembic support) using vcpkg:
+To build AliceVision (with Alembic support) using Vcpkg:
 1. Setup the environment
 
 Windows: due to incompatibilities between CUDA and Visual Studio 2017, Visual 2015 toolset must be used to build AliceVision.
@@ -95,7 +95,7 @@ vcpkg install ^
 ```
 3. Build AliceVision
 ```bash
-# With VCPKG_ROOT being the path to the root of vcpkg installation
+# With VCPKG_ROOT being the path to the root of Vcpkg installation
 cd /path/to/aliceVision/
 mkdir build && cd build
 
